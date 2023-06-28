@@ -1,0 +1,18 @@
+#studentForm td {
+    border: red 1px solid;
+    height: 20px;
+}
+
+td.x {
+    border: orange 3px solid ;
+}
+
+#nameInput {
+    border: blue 2px dashed;
+    
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 70px;
+
+}
