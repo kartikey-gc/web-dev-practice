@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css"/>
     <style>
         *{
@@ -14,12 +14,14 @@
             border: border-box;
         }
         .navbar{
-            height: 50px;
+            height: 60px;
             background-color: #0f1111;
             color: white;
+            display: flex;
+            align-items: center;
         }
         .nav-logo{
-            height: 80px;
+            height: 50px;
             width: 100px;
         }
         .logo{
@@ -34,7 +36,47 @@
         .border:hover{
             border: 1px solid white;
         }
-        
+        .add-first{
+            color: #cccccc;
+            font-size: 0.85rem;
+            margin-left: 15px;
+        }
+        .add-second{
+            font-size: 1rem;
+            margin-left: 3px;
+        }
+        .add-icon{
+            display: flex;
+            align-items: center;
+        }
+        .nav-search{
+            display: flex;
+            justify-content: space-evenly;
+            width: 620px;
+            height: 40px;
+            border-radius: 3px;
+        }
+        .search-select{
+            background-color: #f3f3f3;
+            width: 50px;
+            text-align: center;
+            border-top-left-radius:3px;
+            border-bottom-left-radius:3px;
+            border: none;
+        }
+        .search-input{
+            width: 100%;
+            font-size: 1rem;
+            border: none;
+        }
+        .search-icon{
+            width: 55px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background-color: rgb(255, 174, 0);
+        }
+      
 
     </style>
 <body>
@@ -42,7 +84,22 @@
         <div class="navbar">
             <div class="nav-logo border">
                 <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">india</p>
 
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="search Amazon" class="search-input">
+                <div class="search-icon"></div>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     </header>
