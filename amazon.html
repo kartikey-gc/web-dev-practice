@@ -19,6 +19,7 @@
             color: white;
             display: flex;
             align-items: center;
+           /* justify-content: space-evenly;*/
         }
         .nav-logo{
             height: 50px;
@@ -69,12 +70,22 @@
             font-size: 1rem;
             border: none;
         }
+
         .search-icon{
             width: 55px;
             display: flex;
             justify-content: left;
             align-items: center;
             background-color: rgb(255, 174, 0);
+        
+        }
+        .span{
+            font-size: 0.7rem;
+        }
+
+        .nav-second{
+            font-size: 0.85rem;
+            font-weight: 700;
         }
       
 
@@ -85,12 +96,12 @@
             <div class="nav-logo border">
                 <div class="logo"></div>
             </div>
+
             <div class="nav-address border">
                 <p class="add-first">Deliver to</p>
                 <div class="add-icon">
                     <i class="fa-solid fa-location-dot"></i>
                     <p class="add-second">india</p>
-
                 </div>
             </div>
             <div class="nav-search">
@@ -102,6 +113,10 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
+
+        <div class="nav-signin"></div>
+        <p><span>Hello,sign in</span></p>
+        <p class="nav-second">Account & list</p>
     </header>
 
 </body>
