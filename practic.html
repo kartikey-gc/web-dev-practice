@@ -31,6 +31,39 @@
 <script>
     window.alert(6+4);
 </script>
+<button type="button" onclick="myfunction()">click me</button>
+<p id="function"></p>
+<p id="function2"></p>
+<p id="function3"></p>
+<script>
+    function myfunction(){
+        document.getElementById("function") .innerHTML="hello kartik";
+        document.getElementById("function2") .innerHTML="how are you?";
+        document.getElementById("function3") .innerHTML="what are you doing";
+    }
+</script>
+<h1>JavaScript const </h1>
+<p id="demo"></p>
+<p id="demo"></p>
+
+<script>
+// Create an Array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Change an element:
+cars[0] = "Toyota";
+
+// Add an element:
+cars.push("Audi");
+
+// Add an element:
+cars.push("Thar");
+
+
+// Display the Array:
+document.getElementById("demo").innerHTML = cars; 
+</script>
+
 
 </body>
 </html>
