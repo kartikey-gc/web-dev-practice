@@ -45,6 +45,35 @@
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col{
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px;
+  column-gap: 5px;
+  border: 2px solid red;
+  content: "";
+  display: inline-block;
+}
+
     </style>
 </head>
 <body>
@@ -83,6 +112,42 @@
           and the most populous metropolitan area in the world.</p>
         </div>
       </div>
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <h2>Heading</h2>
+          <p>Some text..</p>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+          <h2>about us</h2>
+          <p></p>
+        </div>
+      </div>
+     <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col">
+          <div class="row">
+          one of three coloumn
+          <p>hey kartik here 
+            how are you  hjksdhfkjahnKSDKDL;KASP[RKKL;kFL;kfJSOFJKL;KZFK;SDFKLJSZKLJFKLDSJFKLCJ.KMKJSDLGKJLZSKLJLSDJGKLJLXDJ
+          </p>
+        </div>
+      </div>
+        <div class="col">
+          <div class="row">
+          one of three coloumn
+        </div>
+        </div>
+        <div class="col">
+          <div class="row">
+          one of three coloumn
+        </div>
+        </div>
+      </div>
+     </div>
       
     
 </body>
