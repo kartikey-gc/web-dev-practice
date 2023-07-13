@@ -6,37 +6,183 @@
     <title>Personal Website</title>
     <link rel="stylesheet" href="D:\Learning\web-dev-practice\Contact.html">
     <style>
+        *{
+            margin: 0px;
+            font-family: Arial;
+            border: border-box;
+        }
         body{
-            background-color: blanchedalmond;
+            background-color: gray;
         }
-       
-        
+        .navbar{
+            height: 60px;
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+           /* justify-content: space-evenly;*/
+        }
+        .nav-logo{
+            height: 50px;
+            width: 100px;
+        }
+        .logo{
+            background-image: url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600);
+            height: 50px;
+            background-size: cover;
+            width: 100px;}
+     
+            .dropbtn {
+  background-color: black;
+  color: red;
+  padding: 16px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+  padding-left: 100px;
+  align-content: right;
+}
 
-        h4{
-            text-align: center;
-            
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-items: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4a3e8e;
+}
+        .Web {
+      display: inline-block;
+      padding: 3px;
+      margin: 0%;
+      overflow: hidden;
         }
-        #Web{
+        div.container {
+  text-align: right;
+        }
+        h4{
+            text-align: left;
+            padding-left: 50px;
+            font-family: Arial;
+            color: darkred;
+            font-size: 80px;
+        }
+        h6{
+            padding-left: 50px;
+            font-size: 30px;
+            text-decoration: underline;
+        
+        }
+        p{
+            padding-left: 50px;
+            font-size: 20px;
+        }
+        .button {
+  
+  border: none;
+  background-color: lightsalmon;
+  /*color: white;*/
+padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+       /* #Web{
             text-align: left;
             font-style: italic;
             color: darkcyan;
             border: none;
-}
+}*/
     </style>
 </head>
 <body>
-    
-    <h4>Hii i, am Kartik.</h4>
-    <h4> i am a Web Developer</h4>
+    <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+       <!----<div class="container">
+        <ul>
+        <li class="Web"><a href="#Home">Home</a></li>
+        <li class="Web"><a href="#Home">Contact</a></li>
+        <li class="Web"><a href="#Home">About Us</a></li>
+        <li class="Web"><a href="#Home">Project</a></li>
+    </ul>-->
+    <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+        </div>
+      </div>
+       <div class="dropdown">
+        <button class="dropbtn">Contact Me</button>
+        <div class="dropdown-content">
+        <a href="https://twitter.com/KartikeyGu53288">@Twitter</a>
+        <a href="https://www.linkedin.com/in/kartikey-gupta-a85986280/">@Linkedin.</a>
+         <a href="kartikeygupta8828@gmail.com">E-mail</a>
+         <a href="https://github.com/kartikey-gc/web-dev-practice">github</a>        
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">About</button>
+        <div class="dropdown-content">
+        <a href="#">Front End Developer</a>
+        <a href="#"></a>
+        <a href="#"></a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Project</button>
+            <div class="dropdown-content">
+            </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Blog</button>
+                <div class="dropdown-content">
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h4>Hii,</h4>
+    <h4>I'am kartikey,</h4>
+    <h4>Web Developer.</h4>
+    <h6>Front End Developer.</h6>
+    <br>
+    <p>You can contact me at Linkedln or Twitter.</p>
    <header>
-        <p id="Web"><button type="button">Home</button></p>
+    <!--<button class="button">Contact Me</button>-->
+   
+        <!--<p id="Web"><button type="button">Home</button></p>
         <a href="Linkedln"><button type="button">Contact Us</button></a>
         <p id="Web"><button type="button">AboutMe</button></p>
         <p id="Web"><button type="button">Blog</button></p>
-        <p id="Web"><button type="button">MyProjects</button></p>
-        
-        
-        
+        <p id="Web"><button type="button">MyProjects</button></p>-->
         </header>
         
 </body>
