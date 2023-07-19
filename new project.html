@@ -6,40 +6,238 @@
     <title>Classic Cloths</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-
 <style>
-    .topnav{
-        background-color: beige;
-        overflow: hidden;
-    }
+    * {box-sizing: border-box;}
 
-        .topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h1{
+  font-size: 70px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+@media screen and (max-width: 1000px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+.dropbtn {
+  background-color: whitesmoke;
+  color: red;
+  padding: 16px;
+  font-size: 25px;
   border: none;
-    }
+  cursor: pointer;
+  padding-left: 100px;
+  align-content: right;
+}
 
-    
-    h1{
-        text-align: center;
-        font-size: 120px;
-    }
-    img{
-        width: 500px;
-        height: 500px;
+.dropdown {
+  position: relative;
+  display: inline-block;
+  align-items: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #4a3e8e;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
 </head>
 <body>
-    <div class="topnav">
-       <img src="https://classicdad.co/cdn/shop/t/3/assets/logo.png?v=136941062366028677731586629910">
-          <h1>Classic Clothes</h1>
-          <input class="search" type="text" placeholder="Search..">
+    
+<div class="header">
+    <h1>StYlE HuB</h1>
+    <a href="https://images.pexels.com/photos/5618250/pexels-photo-5618250.jpeg?auto=compress&cs=tinysrgb&w=600" class="logo"></a>
+    <div class="header-right">
+     <!---- <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>-->
+    </div>
+  </div>
+  <body style="background-color:white;">
+   <!---- <div class="dropdown">
+      <button class="dropbtn">Shoe</button>
+      <div class="dropdown-content">
+      </div>
+    </div>-->
+     <div class="dropdown">
+      <button class="dropbtn">Shoe</button>
+      <div class="dropdown-content">
+      <a href="./addidas.html">Addidas</a>
+      <a href="./Campus.html">Campus</a>
+       <a href="./nike.html">Nike</a>
+       <a href="./Redtape.html">Red tape</a>        
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">About</button>
+      <div class="dropdown-content">
+      <a href="#">Front End Developer</a>
+      <a href="#"></a>
+      <a href="#"></a>
+      </div>
+      </div>
+      <div class="dropdown">
+          <button class="dropbtn">Project</button>
+          <div class="dropdown-content">
           </div>
+          </div>
+          <div class="dropdown">
+              <button class="dropbtn">Blog</button>
+              <div class="dropdown-content">
+              </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+      <!----  <a href="./Schoolindex.html">Home</a>
+        <a href="practic.html">About</a>-->
+      </nav>
+      
+  <div class="row">
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1124466/pexels-photo-1124466.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z3VjY2l8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.unsplash.com/photo-1624796037770-c57cb79a567a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGd1Y2NpfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://images.pexels.com/photos/2783873/pexels-photo-2783873.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1027130/pexels-photo-1027130.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://images.pexels.com/photos/16947118/pexels-photo-16947118/free-photo-of-close-up-of-a-shoe.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/1698359/pexels-photo-1698359.jpeg?auto=compress&cs=tinysrgb&w=600" alt="shoe" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="https://images.pexels.com/photos/2759783/pexels-photo-2759783.jpeg?auto=compress&cs=tinysrgb&w=600" alt="puma" style="width:100%">
+    </div>
+  </div>
+  
+
+  
+   
+    
+
       
 </body>
 </html>
